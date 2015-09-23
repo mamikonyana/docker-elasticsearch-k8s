@@ -11,4 +11,4 @@ ENV KUBERNETES_TRUST_CERT true
 ENV CLUSTER_NAME default_cluster_name
 ENV SERVICE_DNS default_service_dns
 
-ONBUILD COPY config /usr/share/elasticsearch/config
+COPY config/ /usr/share/elasticsearch/config/
