@@ -1,0 +1,23 @@
+cluster:
+  name: ${CLUSTER_NAME}
+
+node:
+  master: true
+  data: true
+
+cloud:
+  k8s:
+    servicedns: ${SERVICE_DNS}
+
+discovery:
+  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
+  zen.ping.multicast.enabled: false
+
+bootstrap:
+  mlockall: true
+
+http:
+  enabled: true
+
+path:
+  data: /data
