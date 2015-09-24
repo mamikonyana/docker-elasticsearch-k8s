@@ -19,5 +19,5 @@ bootstrap:
 http:
   enabled: true
 
-path:
-  data: /data
+# path:
+#   data: /data
