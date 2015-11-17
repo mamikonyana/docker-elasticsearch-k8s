@@ -10,7 +10,7 @@ cloud:
     servicedns: ${SERVICE_DNS}
 
 discovery:
-  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
+  type: kubernetes
   zen.ping.multicast.enabled: false
 
 bootstrap:
