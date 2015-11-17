@@ -1,7 +1,7 @@
 FROM elasticsearch:2.0
 
-RUN /usr/share/elasticsearch/bin/plugin -install io.fabric8/elasticsearch-cloud-kubernetes/2.0.0
-RUN /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head
+RUN /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
+RUN /usr/share/elasticsearch/bin/plugin install io.fabric8/elasticsearch-cloud-kubernetes/2.0.0
 
 RUN mkdir /data
 
