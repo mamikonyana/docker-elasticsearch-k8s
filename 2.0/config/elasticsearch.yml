@@ -2,12 +2,15 @@ cluster:
   name: ${CLUSTER_NAME}
 
 node:
-  master: true
   data: true
 
 cloud:
   k8s:
     servicedns: ${SERVICE_DNS}
+  kubernetes:
+    servicedns: ${SERVICE_DNS}
+    service: ${SERVICE_DNS}
+    namespace: default
 
 discovery:
   type: kubernetes
