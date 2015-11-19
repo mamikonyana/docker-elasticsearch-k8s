@@ -13,7 +13,7 @@ ENV KUBERNETES_AUTH_TRYKUBECONFIG true
 ENV KUBERNETES_TRUST_CERTIFICATES true
 ENV KUBERNETES_AUTH_TRYSERVICEACCOUNT true
 
-ADD kubeconfig /home/elasticsearch/.kube/config
-RUN chown -R elasticsearch:elasticsearch /home/elasticsearch
+# ADD kubeconfig /home/elasticsearch/.kube/config
+# RUN chown -R elasticsearch:elasticsearch /home/elasticsearch
 
 COPY config/ /usr/share/elasticsearch/config/
