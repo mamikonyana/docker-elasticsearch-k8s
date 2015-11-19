@@ -5,7 +5,7 @@ node:
   data: true
 
 network:
-  host: 0.0.0.0
+  host: _non_loopback:ipv4_
 
 cloud:
   kubernetes:

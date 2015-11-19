@@ -7,6 +7,6 @@ build:
 	docker build --rm -t ${PACKAGE}:${TAG} ${DEV_FOLDER}
 .PHONY: build
 
-run:
+run: build
 	docker run -t ${PACKAGE}:${TAG}
 .PHONY: run 
