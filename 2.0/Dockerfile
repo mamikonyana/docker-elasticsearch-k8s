@@ -13,11 +13,11 @@ ENV SERVICE_DNS default_service_dns
 
 ENV KUBERNETES_AUTH_TRYKUBECONFIG true
 ENV KUBERNETES_TRUST_CERTIFICATES true
-ENV KUBERNETES_AUTH_TRYSERVICEACCOUNT false
+ENV KUBERNETES_AUTH_TRYSERVICEACCOUNT true
 
 ADD kubeconfig /home/elasticsearch/.kube/config
 RUN chown -R elasticsearch:elasticsearch /home/elasticsearch
 
-COPY config/ /usr/share/elasticsearch/config/
+# COPY config/ /usr/share/elasticsearch/config/
 
 CMD ["elasticsearch"]

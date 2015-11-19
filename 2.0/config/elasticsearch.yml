@@ -4,11 +4,11 @@ cluster:
 node:
   data: true
 
+network:
+  host: 0.0.0.0
+
 cloud:
-  k8s:
-    servicedns: ${SERVICE_DNS}
   kubernetes:
-    servicedns: ${SERVICE_DNS}
     service: ${SERVICE_DNS}
     namespace: default
 
