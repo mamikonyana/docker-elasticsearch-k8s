@@ -22,5 +22,5 @@ bootstrap:
 http:
   enabled: true
 
-# path:
-#   data: /data
+# Otherwise kubernetes plugin doesn't work on ES 2.0
+security.manager.enabled: false
