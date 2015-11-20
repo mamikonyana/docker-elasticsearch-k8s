@@ -1,5 +1,6 @@
 cluster:
   name: ${CLUSTER_NAME}
+  data: ${CLUSTER_DATA}
 
 node:
   data: true
@@ -20,7 +21,7 @@ bootstrap:
   mlockall: true
 
 http:
-  enabled: true
+  enabled: {HTTP_ENABLED}
 
 # Otherwise kubernetes plugin doesn't work on ES 2.0
 security.manager.enabled: false
