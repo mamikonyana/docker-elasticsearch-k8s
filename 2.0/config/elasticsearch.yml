@@ -1,9 +1,8 @@
 cluster:
   name: ${CLUSTER_NAME}
-  data: ${CLUSTER_DATA}
 
 node:
-  data: true
+  data: ${NODE_DATA}
 
 network:
   host: _non_loopback:ipv4_
