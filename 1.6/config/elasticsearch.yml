@@ -3,7 +3,7 @@ cluster:
 
 node:
   master: true
-  data: true
+  data: ${NODE_DATA}
 
 cloud:
   k8s:
@@ -17,7 +17,4 @@ bootstrap:
   mlockall: true
 
 http:
-  enabled: true
-
-# path:
-#   data: /data
+  enabled: {HTTP_ENABLED}

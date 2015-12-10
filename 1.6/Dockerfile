@@ -10,5 +10,7 @@ ENV KUBERNETES_TRUST_CERT true
 
 ENV CLUSTER_NAME default_cluster_name
 ENV SERVICE_DNS default_service_dns
+ENV NODE_DATA true
+ENV HTTP_ENABLED true
 
 COPY config/ /usr/share/elasticsearch/config/

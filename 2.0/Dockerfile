@@ -14,7 +14,6 @@ ENV KUBERNETES_AUTH_TRYSERVICEACCOUNT true
 # Environment variables for elasticsearch configuration.
 ENV CLUSTER_NAME default_cluster_name
 ENV SERVICE_DNS default_service_dns
-ENV CLUSTER_DATA true
 ENV HTTP_ENABLED true
 
 # ADD kubeconfig /home/elasticsearch/.kube/config
